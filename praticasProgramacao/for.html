@@ -11,16 +11,14 @@
             let soma = 0
 
             for(let contador = 1; contador <= qtde; contador++){
-                nota = prompt('Digite a nota ' + contador)
+                nota = Number(prompt('Digite a nota ' + contador))
                 soma = soma + nota 
-                console.log(contador)
             }
 
+            const media = soma / qtde
+            console.log("A média final é: " + media)
 
         </script>
-
-
-
     </head>
     <body>
         
