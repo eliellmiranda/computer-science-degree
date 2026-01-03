@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+        <meta charset="UTF-8">
+
+        <script>
+
+            const carros = ['Gol',
+             'Fusca',
+             'Virtus',
+             'Ka'
+            ]
+
+            carros.push('Fiesta')
+            carros.unshift('Palio')              
+              
+            console.table(carros)
+
+            carros.splice(1, 0, 'Uno')
+
+            carros.sort()
+            console.table(carros)
+/*
+splice serve para:
+Excluir itens a partir de uma posição
+ex: carros.splice(2, 3) -> exclui 3 itens a partir da posição 2
+
+inserir itens a partir de uma posição
+ex: carros.splice(3, 0, 'Uno') -> adiciona o iten 'Uno' na posição 3
+
+alterar itens a partir de uma posição
+ex: carros.splice(1 , 1, 'Uno') -> adicionar o item 'Uno' na posição 1 após apagar o item que lá estava
+
+*/
+
+
+        </script>
+   
+    
+</head>
+<body>
+    
+</body>
+</html>
