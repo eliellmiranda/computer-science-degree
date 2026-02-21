@@ -4,13 +4,33 @@
         <title>Funções</title>
         <meta charset="UTF-8">
 
+        <script type="text/javascript" src="js/funcoes.js"></script>
+
         <script>
 
+            function calcular(){
+                console.log('Você chamou a função "calcular"')
 
+            }
+            calcular()
         </script>
+        
     </head> 
     <body>
+        <form action="">
 
+            N1: <input type="text" id="n1"><br>
+            N2: <input type="text" id="n2"><br>
+           
+            <input type="button" value="Somar" onclick="calcular()">
+            <input type="button" value="Subtrair" onclick="subtrair()">
+            <input type="button" value="Multiplicar" onclick="multiplicar()">
+            <input type="button" value="Dividir" onclick="dividir()">
+
+            <h1 id="resultado">O resultado é: </h1>
+          
+
+        </form>
 
 
     </body>
