@@ -1,6 +1,6 @@
  function calcular(operacao){
-    const n1 = Number(document.getElementById('n1').value)
-    const n2 = Number(document.getElementById('n2').value)
+    const n1 = document.getElementById('n1').value
+    const n2 = document.getElementById('n2').value
 
     let resultado 
     switch(operacao){
@@ -32,7 +32,13 @@ function multiplicar(n1, n2){
     
  }
 
-function dividir(){
-                return Number(n1) / Number(n2)
+function dividir(n1, n2){
+    if(n2 == 0){
+        console.error('Não é possível dividir por 0')
+        return null
+    } else {
+        return Number(n1) / Number(n2)
     
+    }
+                
  }
