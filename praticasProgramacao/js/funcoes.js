@@ -1,48 +1,38 @@
- function calcular(){
+ function calcular(operacao){
+    const n1 = Number(document.getElementById('n1').value)
+    const n2 = Number(document.getElementById('n2').value)
+
+    let resultado 
+    switch(operacao){
+        case '+': resultado = somar(n1, n2); break;
+        case '-': resultado = subtrair(n1, n2); break;
+        case '*': resultado = multiplicar(n1, n2); break;
+        case '/': resultado = dividir(n1, n2); break;
+
+    }
+
+    document.getElementById('resultado').innerHTML = 'O resultado é ' + resultado
 
 
- }
+}
+              
  
- 
- function somar(){
-                const n1 = Number(document.getElementById('n1').value)
-                const n2 = Number(document.getElementById('n2').value)
-
-                const soma = n1 + n2
-
-                document.getElementById('resultado').innerHTML = 'A soma dos números é: ' + soma
+ function somar(n1, n2){
+                return Number(n1) + Number(n2)
 }
 
-function subtrair(){
-    
-    const n1 = Number(document.getElementById('n1').value)
-    const n2 = Number(document.getElementById('n2').value)
+function subtrair(n1, n2){
+                return Number(n1) - Number(n2)
 
-                const subtracao = n1 - n2
+}
 
-                document.getElementById('resultado').innerHTML = 'A subtração dos números é: ' + subtracao
-
-
- }
-
-function multiplicar(){
-    const n1 = Number(document.getElementById('n1').value)
-    const n2 = Number(document.getElementById('n2').value)
-
-                const multiplicacao = n1 * n2
-
-                document.getElementById('resultado').innerHTML = 'A multiplicação dos números é: ' + multiplicacao
+function multiplicar(n1, n2){
+                return Number(n1) * Number(n2)
 
     
  }
 
 function dividir(){
-    const n1 = Number(document.getElementById('n1').value)
-    const n2 = Number(document.getElementById('n2').value)
-
-                const divisao = n1 / n2
-
-                document.getElementById('resultado').innerHTML = 'A divisão números é: ' + divisao
-
+                return Number(n1) / Number(n2)
     
  }
