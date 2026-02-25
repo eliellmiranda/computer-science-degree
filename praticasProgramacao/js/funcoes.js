@@ -42,3 +42,7 @@ function dividir(n1, n2){
     }
                 
  }
+
+const somaArrow = (n1, n2) => n1 + n2
+
+console.log( somaArrow(900, 87))
